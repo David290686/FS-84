@@ -3,6 +3,23 @@
 	--secondary-title-color: #303030;
 	--accent-color: #ff6c00;
 	--secondary-font: "Raleway", sans-serif;
+	--basic-margin: ;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
 }
 .visually-hidden {
 	position: absolute;
@@ -18,6 +35,13 @@
 }
 body {
 	font-family: "Open sans", sans-serif;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	outline: 1px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .title {
 	font-family: var(--secondary-font);
@@ -48,6 +72,7 @@ body {
 /*----------------- header -----------------*/
 .header {
 	background-color: gray;
+	padding: 32px 0px;
 }
 .header-nav {
 }
@@ -98,6 +123,7 @@ body {
 }
 .hero-subtitle {
 	color: rgba(157, 164, 189, 0.6);
+	margin-bottom: var(--basic-margin);
 }
 .hero-title {
 	font-family: var(--secondary-font);
@@ -107,6 +133,7 @@ body {
 	color: var(--main-title-color);
 }
 .hero-description {
+	width: 360px;
 	font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
@@ -114,6 +141,7 @@ body {
 }
 /*----------------- about -----------------*/
 .about {
+	padding: 120px 0;
 }
 .about-list {
 }
@@ -121,33 +149,42 @@ body {
 }
 .about-subtitle {
 	color: var(--secondary-title-color);
+	margin-bottom: var(--basic-margin);
 }
 .about-title {
 	color: var(--secondary-title-color);
+	margin-bottom: var(--basic-margin);
 }
 .about-description {
 	font-size: 14px;
 	line-height: 1.86;
 	letter-spacing: 0.02em;
 	color: #555555;
+	margin-bottom: 42px;
 }
 .about-description span {
+	display: block;
 	font-size: 18px;
 	line-height: 1.67;
+	margin-bottom: var(--basic-margin);
 }
 .about-btn {
 	color: #303030;
 }
 /*----------------- prices -----------------*/
 .prices {
+	padding: 120px 0;
 }
 .prices-subtitle {
 	color: rgba(157, 164, 189, 0.6);
+	margin-bottom: var(--basic-margin);
 }
 .price-title {
 	color: var(--main-title-color);
+	margin-bottom: 44px;
 }
 .prices-list {
+	padding: 30px 20px;
 }
 .prices-item {
 }
