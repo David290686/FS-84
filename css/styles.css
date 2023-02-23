@@ -189,6 +189,9 @@ body {
 }
 .prices-item {
 }
+.prices-item:not(:last-child) { 
+margin-bottom: var(--basic-margin)
+}
 .prices-item-text {
 	font-size: 18px;
 	line-height: 1.67;
