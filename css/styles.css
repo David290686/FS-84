@@ -3,7 +3,7 @@
 	--secondary-title-color: #303030;
 	--accent-color: #ff6c00;
 	--secondary-font: "Raleway", sans-serif;
-	--basic-margin: ;
+	--basic-margin: 20px;
 }
 h1,
 h2,
@@ -131,6 +131,7 @@ body {
 	line-height: 1.18;
 	letter-spacing: 0.05em;
 	color: var(--main-title-color);
+	margin-bottom: var(--basic-margin);
 }
 .hero-description {
 	width: 360px;
