@@ -297,10 +297,11 @@ body {
 }
 .barbers-subtitle {
 	color: var(--secondary-title-color);
-	margin-bottom: 44px;
+	margin-bottom: var(--basic-margin);
 }
 .barbers-title {
 	color: var(--secondary-title-color);
+	margin-bottom: 44px;
 }
 .barbers-list {
 	display: flex;
