@@ -65,7 +65,7 @@ body {
 	background-color: transparent;
 	color: #ffffff;
 	border: 1px solid var(--accent-color);
-    border-radius: 25px;
+	border-radius: 25px;
 	padding: 12px 20px;
 	min-width: 160px;
 }
@@ -122,16 +122,15 @@ body {
 	background-color: transparent;
 	color: #ffffff;
 	border: 1px solid var(--accent-color);
-    border-radius: 25px;
+	border-radius: 25px;
 	padding: 12px 20px;
 	min-width: 160px;
-
 }
 /*----------------- hero -----------------*/
 .hero {
 }
 .hero-container {
-display: flex;
+	display: flex;
 }
 .hero-content {
 	background-color: gray;
@@ -139,8 +138,8 @@ display: flex;
 	flex-grow: 1;
 }
 .hero-list {
-	width: 100px
-;}
+	width: 100px;
+}
 .hero-link {
 	font-weight: 600;
 	font-size: 11px;
@@ -242,8 +241,8 @@ display: flex;
 	display: flex;
 	justify-content: space-between;
 }
-.prices-item:not(:last-child) { 
-margin-bottom: var(--basic-margin)
+.prices-item:not(:last-child) {
+	margin-bottom: var(--basic-margin);
 }
 .prices-item-text {
 	font-size: 18px;
@@ -305,7 +304,7 @@ margin-bottom: var(--basic-margin)
 }
 .barbers-list {
 	display: flex;
-	flex-wrap: wrap ;
+	flex-wrap: wrap;
 	gap: 30px;
 }
 .barbers-item {
