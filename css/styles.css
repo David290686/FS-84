@@ -136,9 +136,10 @@ body {
 	background-color: gray;
 	padding: 272px 100px 208px;
 	flex-grow: 1;
-	background-image: linear-gradient(
-		rgba(25, 28, 38, 0,2),
-     	rgba(25, 28, 38, 0,2)
+	background-image: 
+	linear-gradient(
+		rgba(25, 28, 38, 0.2),
+     	rgba(25, 28, 38, 0.2)
 		),
 	url(../images/background/background1.jpg);
 	background-repeat: no-repeat;
