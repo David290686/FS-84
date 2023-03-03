@@ -54,6 +54,16 @@ body {
 	font-size: 11px;
 	line-height: 1.36;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+.subtitle::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+	display: block;
+	margin-right: 20px;
 }
 .btn {
 	font-weight: 600;
@@ -244,6 +254,15 @@ body {
 .prices-item {
 	display: flex;
 	justify-content: space-between;
+	gap: 12px;
+	align-items: baseline;
+}
+.prices-item::before {
+	content: "";
+	height: 1px;
+	flex-grow: 1;
+	background-color: rgba(157, 164, 189, 0.12);
+	display: inline-block;
 }
 .prices-item:not(:last-child) {
 	margin-bottom: var(--basic-margin);
@@ -254,6 +273,9 @@ body {
 	letter-spacing: 0.02em;
 	color: #9da4bd;
 }
+.prices-item-text:first-child {
+	order: -1;
+}
 .prices-btn {
 	color: #ffffff;
 	display: block;
@@ -262,9 +284,16 @@ body {
 /*----------------- benefits -----------------*/
 .benefits {
 }
+.benefits-container {
+}
 .benefits-list {
 }
-.benefits-item {
+.benefits-item > span::after {
+	content: "+";
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.37;
+	color: var(--accent-color);
 }
 .benefits-item span {
 	font-weight: 700;
@@ -273,6 +302,8 @@ body {
 	text-align: center;
 	letter-spacing: 0.05em;
 	color: #303030;
+	display: flex;
+	align-items: flex-start;
 }
 .benefits-item-text {
 	font-weight: 600;
