@@ -37,9 +37,9 @@ body {
 	font-family: "Open sans", sans-serif;
 }
 .container {
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
-	outline: 1px solid red;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -230,8 +230,12 @@ body {
 }
 /*----------------- prices -----------------*/
 .prices {
-	background-color: gray;
 	padding: 120px 0;
+	background-image: url(../images/prices.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #111319;
 }
 .prices-subtitle {
 	color: rgba(157, 164, 189, 0.6);
@@ -247,9 +251,10 @@ body {
 	margin-bottom: 44px;
 }
 .prices-list {
-	border: 1px solid green;
 	padding: 30px 20px;
 	flex-grow: 1;
+	width: calc((100% - 30px) / 2);
+	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .prices-item {
 	display: flex;
@@ -283,10 +288,31 @@ body {
 }
 /*----------------- benefits -----------------*/
 .benefits {
+	padding: 120px 0;
 }
 .benefits-container {
+	display: flex;
 }
 .benefits-list {
+	width: 45%;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.benefits-content {
+	width: 55%;
+	max-width: 500px;
+}
+.benefits-item {
+	padding: 20px 24px;
+	width: 170px;
+	height: 132px;
+	background-color: #f7f7f7;
+}
+.benefits-item:nth-child(even) {
+	margin-top: 30px;
 }
 .benefits-item > span::after {
 	content: "+";
@@ -314,9 +340,11 @@ body {
 }
 .benefits-subtitle {
 	color: var(--secondary-title-color);
+	margin-bottom: var(--basic-margin);
 }
 .benefits-title {
 	color: var(--secondary-title-color);
+	margin-bottom: var(--basic-margin);
 }
 .benefits-description {
 	font-size: 18px;
@@ -324,6 +352,7 @@ body {
 	letter-spacing: 0.02em;
 	color: #555555;
 }
+
 /*----------------- barbers -----------------*/
 .barbers {
 }
@@ -406,9 +435,26 @@ body {
 }
 /*----------------- contact -----------------*/
 .contact {
+	background-color: #191c26;
+	padding: 130px 0 120px;
+	background-image: url(../images/contact-bg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 50% 100%;
+}
+.contact-container {
+	display: flex;
+}
+.contact-form {
+	width: 50%;
+}
+.contact-wrap {
+	width: 50%;
+	padding-left: 100px;
 }
 .contact-title {
 	color: var(--main-title-color);
+	margin-bottom: 40px;
 }
 .contact-adress {
 	font-style: normal;
@@ -417,10 +463,12 @@ body {
 	line-height: 1.67;
 	letter-spacing: 0.02em;
 	color: #9da4bd;
+	margin-bottom: 70px;
 }
 .contact-list {
 }
 .contact-item {
+	margin-bottom: var(--basic-margin);
 }
 .contact-link {
 	font-size: 18px;
@@ -430,10 +478,42 @@ body {
 }
 .contact-subtitle {
 	color: var(--main-title-color);
+	margin-bottom: var(--basic-margin);
 }
 .contact-hours {
 	font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
 	color: #9da4bd;
+}
+/*----------------- footer -----------------*/
+.footer {
+	padding: 56px 0 56px;
+	background-color: #f7f7f7;
+}
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social-list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.social-list::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+}
+.social-link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: #303030;
+}
+.social-link:is(:hover, :focus) {
+	color: var(--accent-color);
 }
