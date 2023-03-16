@@ -305,6 +305,19 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" data-modal-close class="modal-close">X</button>
+			<h3 class="modal-title">Modal title</h3>
+			<form class="modal-form form">
+				<label class="form-label">
+					<span>Enter your name*</span>
+                <input type="text" class="form-input" placeholder="Enter your name*" name="fullname" required>
+				<svg class="form-icon" width="16px" height="16px">
+					<use href="./images/symbol-defs.svg#icon-user"></use>
+				</svg>
+			    </label>
+				<input type="email" class="form-input" placeholder="Enter your email*" name="email" required>
+				<input type="tel" class="form-input" placeholder="Enter your phone" name="phone">
+				<button type="submit" class="form-btn btn">Send</button>
+			</form>
 			</div>
 		</div>
 		<script src="./js/main.js"></script>
