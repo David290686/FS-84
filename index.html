@@ -307,15 +307,29 @@
 				<button type="button" data-modal-close class="modal-close">X</button>
 			<h3 class="modal-title">Modal title</h3>
 			<form class="modal-form form">
+				<div class="form-group">
 				<label class="form-label">
 					<span>Enter your name*</span>
+					<div class="form-control">
                 <input type="text" class="form-input" placeholder="Enter your name*" name="fullname" required>
 				<svg class="form-icon" width="16px" height="16px">
-					<use href="./images/symbol-defs.svg#icon-user"></use>
+					<use href="./images/modal-icon.svg#icon-name"></use>
 				</svg>
+			    </div>
 			    </label>
+			    </div>
+				<div class="form-group">
+				<label class="form-label">
+					<span>Enter your email*</span>
 				<input type="email" class="form-input" placeholder="Enter your email*" name="email" required>
+			    </label>
+			    </div>
+				<div class="form-group">
 				<input type="tel" class="form-input" placeholder="Enter your phone" name="phone">
+			    </div>
+				<div class="form-group">
+				<textarea name="massage" class="forn-textarea" placeholder="Massage"></textarea>
+			    </div>
 				<button type="submit" class="form-btn btn">Send</button>
 			</form>
 			</div>
