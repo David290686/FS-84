@@ -39,12 +39,12 @@ body {
 	font-family: "Open sans", sans-serif;
 }
 .container {
-	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
 .title {
 	font-family: var(--secondary-font);
 	font-size: 42px;
@@ -274,7 +274,7 @@ body {
 }
 /*----------------- prices -----------------*/
 .prices {
-	padding: 120px 0;
+	padding: 84px 0;
 	background-image: url(../images/prices.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -291,15 +291,19 @@ body {
 }
 .prices-content {
 	display: flex;
-	gap: 30px;
+	flex-wrap: wrap;
+	
 	margin-bottom: 44px;
+	background-image: linear-gradient
+	(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .prices-list {
 	padding: 30px 20px;
 	flex-grow: 1;
-	width: calc((100% - 30px) / 2);
-	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+	width: 100%;
+	
 }
+
 .prices-item {
 	display: flex;
 	justify-content: space-between;
@@ -317,7 +321,7 @@ body {
 	margin-bottom: var(--basic-margin);
 }
 .prices-item-text {
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
 	color: #9da4bd;
@@ -401,6 +405,8 @@ body {
 
 /*----------------- barbers -----------------*/
 .barbers {
+	padding-top: 84px;
+	padding-bottom: 84px;
 }
 .barbers-content {
 	padding: 30px;
@@ -419,7 +425,7 @@ body {
 	gap: 30px;
 }
 .barbers-item {
-	width: calc((100% - 60px) / 3);
+	width: 100%;
 }
 .barbers-item-title {
 	font-size: 18px;
@@ -466,7 +472,7 @@ body {
 }
 /*----------------- gallery -----------------*/
 .gallery {
-	padding: 120px 0;
+	padding: 84px 0;
 }
 .gallery-subtitle {
 	color: var(--secondary-title-color);
@@ -478,7 +484,7 @@ body {
 	gap: 30px;
 }
 .gallery-item {
-	width: calc((100% - 90px) / 4);
+	width: 100%;
 }
 /*----------------- contact -----------------*/
 .contact {
